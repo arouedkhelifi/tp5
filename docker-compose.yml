@@ -1,1 +1,12 @@
+services:
+  mern-server:
+    image: arouedkhelifi/mern-server
+    ports:
+      - "9000:90"
+    restart: unless-stopped
 
+  mern-client:
+    image: arouedkhelifi/mern-client
+    ports:
+      - "3000:30"
+    restart: unless-stopped
